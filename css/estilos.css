@@ -1,5 +1,7 @@
 .Portada {
   background-image: url("../imagenes/tienda.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
   position:absolute;
   top:0;
   bottom:0;
