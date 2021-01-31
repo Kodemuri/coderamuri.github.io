@@ -1,3 +1,75 @@
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+      main {
+        flex: 1 0 auto;
+        display:flex;
+        justify-content:column;
+        flex-direction:column;
+      }
+      nav{
+        padding:0 17px;
+      }
+      section{
+        text-align:center;
+        padding:50px;
+        height:auto;
+        min-height:500px;
+      }
+      .Caja:nth-child(2n){
+        background-color:#eee;
+      }
+      .Caja-texto, .Caja-imagen{
+        width:50%;  
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+      .Caja-texto{
+        padding:30px;
+      }
+      .Caja-texto p, .Caja-texto ul li{
+        font-size:18px;
+        line-height:26px;
+        text-align:left;
+        padding:30px;
+      }
+      .Caja-boton{
+        padding:30px;
+      }
+      .Direccion-izquierda{
+        display:flex;
+      }
+      .Direccion-derecha{
+        display:flex;
+        flex-direction:row-reverse;
+      }
+      .Portada{
+        height:75vh;
+        background-image: url("../imagenes/tienda-01.jpg");
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:cover;
+        background-attachment:fixed;
+      }
+      .Portada-contenido{
+        display:flex;
+        justify-content:center;
+        width:100%;
+      }
+      .Portada-titulos{
+        background-color: rgba(0,0,0,0.6);
+        color:white;
+        padding:30px;
+        border-radius:5px;
+      }
+      .btn-large{
+        height:50px !important;
+        line-height:50px !important;
+      }
+/*
 .Portada {
   background-image: url("../imagenes/tienda.jpg");
   background-repeat: no-repeat;
@@ -19,15 +91,6 @@
   padding: 30px;
   border-radius:5px;
 }
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-nav{
-padding: 0 15px;
-}
-main {
-  flex: 1 0 auto;
-  position:relative;
-}
+*/
+
+
