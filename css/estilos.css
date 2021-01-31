@@ -1,0 +1,31 @@
+.Portada {
+  background-image: url("../imagenes/tienda.jpg");
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.Portada-contenido{
+  display: flex;
+  justify-content:center;
+  width:100%;
+}
+.Portada-titulos{
+  background-color: rgba(0,0,0,0.3);
+  color:white;
+  padding: 30px;
+  border-radius:5px;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+nav{
+padding: 0 15px;
+}
+main {
+  flex: 1 0 auto;
+  position:relative;
+}
