@@ -6,6 +6,95 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="libreria/materialize.css">
+    <link rel="stylesheet" href="libreria/fontAwesome5Pro.css">
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+      main {
+        flex: 1 0 auto;
+        display:flex;
+        justify-content:column;
+        flex-direction:column;
+      }
+      nav{
+        padding:0 17px;
+      }
+      section{
+        text-align:center;
+        padding:50px;
+        height:auto;
+        min-height:500px;
+      }
+      .Caja:nth-child(2n){
+        background-color:#f5f5f5;
+      }
+      .Caja-imagen img{
+        border-radius:10px;
+      }
+      .Caja-texto, .Caja-imagen{
+        width:50%;  
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+      .Caja-texto{
+        padding:40px;
+      }
+      .Caja-titulo h2{
+        margin:0 0 2.37333rem 0;
+      }
+      .Caja-boton{
+        padding:50px 0 0 0;
+      }
+      .Caja-texto p, .Caja-texto ul li{
+        font-size:18px;
+        line-height:26px;
+        text-align:left;
+      }
+      .Caja-texto span{
+        font-size:35px;
+        font-weight:bold;
+      }
+      .Direccion-izquierda{
+        display:flex;
+      }
+      .Direccion-derecha{
+        display:flex;
+        flex-direction:row-reverse;
+      }
+      .Portada{
+        height:75vh;
+        background-image: url("../imagenes/tienda-01.jpg");
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:cover;
+        background-attachment:fixed;
+      }
+      .Portada-contenido{
+        display:flex;
+        justify-content:center;
+        width:100%;
+      }
+      .Portada-titulos{
+        background-color: rgba(0,0,0,0.6);
+        color:white;
+        padding:30px;
+        border-radius:5px;
+      }
+      .btn-large{
+        height:50px !important;
+        line-height:50px !important;
+      }
+      .Tachado{
+        text-decoration:line-through;
+        font-weight:200 !important;
+        font-size:40px !important;
+      }
+
+    </style>
 </head>
 <body>
   <header>
@@ -36,7 +125,7 @@
           <p>Adipisicing omnis illo autem quod tempora. Laboriosam aliquam fugit aliquam explicabo quas! Ducimus laboriosam repellendus reprehenderit neque ipsa Dolorum architecto soluta recusandae nostrum laudantium nobis rem? Dolor optio eius a</p>
         </div>
         <div class="Caja-imagen">
-          <img loading="lazy" class="responsive-img" src="imagenes/24horas.jpg" alt="Abierto las 24 horas">
+          <img loading="lazy" class="responsive-img z-depth-3" src="imagenes/24horas.jpg" alt="Abierto las 24 horas">
         </div>
       </div>
       <div class="Caja-boton">
@@ -52,7 +141,7 @@
           <p>Adipisicing omnis illo autem quod tempora. Laboriosam aliquam fugit aliquam explicabo quas! Ducimus laboriosam repellendus reprehenderit neque ipsa Dolorum architecto soluta recusandae nostrum laudantium nobis rem? Dolor optio eius a</p>
         </div>
         <div class="Caja-imagen">
-          <img loading="lazy" class="responsive-img" src="imagenes/compradores.jpg" alt="Miles de compradores">
+          <img loading="lazy" class="responsive-img z-depth-3" src="imagenes/compradores.jpg" alt="Miles de compradores">
         </div>
       </div>
       <div class="Caja-boton">
@@ -68,7 +157,7 @@
           <p>Adipisicing omnis illo autem quod tempora. Laboriosam aliquam fugit aliquam explicabo quas! Ducimus laboriosam repellendus reprehenderit neque ipsa Dolorum architecto soluta recusandae nostrum laudantium nobis rem? Dolor optio eius a</p>
         </div>
         <div class="Caja-imagen">
-          <img loading="lazy" class="responsive-img" src="imagenes/aumenta.jpg" alt="Miles de compradores">
+          <img loading="lazy" class="responsive-img z-depth-3" src="imagenes/aumenta.jpg" alt="Miles de compradores">
         </div>
       </div>
       <div class="Caja-boton">
@@ -81,20 +170,38 @@
       </div>
       <div class="Caja-contenido Direccion-derecha">
         <div class="Caja-texto">
-          <ul>
-            <li>1.- Dominio .org .net .com 1 año.</li>
-            <li>2.- Hosting 1 año.</li>
-            <li>3.- Instalación.</li>
-            <li>4.- Asesoriamiento con el dominio.</li>
-            <li>5.- Diseño Multiplataforma.</li>
-          </ul>
+          <div>
+            <ul>
+              <li>1.- Dominio .org .net .com 1 año.</li>
+              <li>2.- Hosting 1 año.</li>
+              <li>3.- Instalación.</li>
+              <li>4.- Asesoriamiento con el dominio.</li>
+              <li>5.- Diseño Multiplataforma.</li>
+            </ul>
+            <p>Costo</p>
+            <span class="Tachado grey-text">$2.400.000</span></br>
+            <span class="red-text text-darken-4">$800.000</span></br></br>
+            <a href="https://api.whatsapp.com/send?phone=+573186281738&text=Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20tienda%20virtual" class="btn-large green darken-4" target="_blank">Contactar por WhatsApp</a>
+            <p>Si lo deseas también me puedes contactar en mis redes sociales</p>
+            <div class="Redes">
+              <a class="btn-small orange darken-4" href="https://www.facebook.com/CodeRamuri/" target="_blank">
+                <i class="fab fa-facebook-f"></i> Facebook
+              </a>
+               <a class="btn-small orange darken-4" href="https://www.tiktok.com/@coderamuri/" target="_blank">
+                <i class="fab fa-tiktok"></i> TikTok
+              </a>             
+              <a class="btn-small orange darken-4" href="https://twitter.com/coderamuri/" target="_blank">
+                <i class="fab fa-twitter"></i> Twitter
+              </a>
+              <a class="btn-small orange darken-4" href="https://www.instagram.com/coderamuri/" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+              </a>             
+            </div>
+          </div>
         </div>
         <div class="Caja-imagen">
-          <img loading="lazy" class="responsive-img" src="imagenes/incluye.jpg" alt="Miles de compradores">
+          <img loading="lazy" class="responsive-img z-depth-3" src="imagenes/incluye.jpg" alt="Miles de compradores">
         </div>
-      </div>
-      <div class="Caja-boton">
-        <a href="#!" class="btn-large orange darken-4">Contratar ahora</a>
       </div>
     </section>   
   </main>
