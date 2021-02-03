@@ -94,6 +94,35 @@
         .Caja-imagen img{
           width:100%;
         }
+        .Caja-texto{
+          padding:20px 5px;
+        }
+        .Caja-boton{
+          padding-top:20px;
+        }
+        section{
+          padding:20px 10px;
+        }
+        h2{
+          font-size: 3.3rem;
+        }
+        .Redes{
+          display: flex;
+          flex-direction:column;
+        }
+        .Redes-caja{
+          margin-top:15px;
+        }
+        nav .brand-logo{
+          font-size:1.8rem !important;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          width:200px;
+        }
+        .brand-logo img{
+          margin-top:-7px !important;
+        }
       }
 
       .Portada{
@@ -136,7 +165,10 @@
   <header>
     <nav class="indigo darken-4">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><img src="icon/favicon-32x32.png" alt="Tienda Virtual" > Tienda Virtual</a>
+        <a href="#" class="brand-logo">
+          <img src="icon/favicon-32x32.png" alt="Tienda Virtual" > 
+          <span>Tienda Virtual</span>
+        </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#contratar" class="btn-large orange darken-4">Contratar ahora</a></li>
         </ul>
@@ -220,18 +252,22 @@
             <a href="https://api.whatsapp.com/send?phone=+573156281738&text=Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20tienda%20virtual" class="btn-large green darken-4" target="_blank">Contactar por WhatsApp</a>
             <p>Si lo deseas también me puedes contactar en mis redes sociales</p>
             <div class="Redes">
-              <a class="btn-small orange darken-4" href="https://www.facebook.com/CodeRamuri/" target="_blank">
-                <i class="fab fa-facebook-f"></i> Facebook
-              </a>
-               <a class="btn-small orange darken-4" href="https://www.tiktok.com/@coderamuri/" target="_blank">
-                <i class="fab fa-tiktok"></i> TikTok
-              </a>             
-              <a class="btn-small orange darken-4" href="https://twitter.com/coderamuri/" target="_blank">
-                <i class="fab fa-twitter"></i> Twitter
-              </a>
-              <a class="btn-small orange darken-4" href="https://www.instagram.com/coderamuri/" target="_blank">
-                <i class="fab fa-instagram"></i> Instagram
-              </a>             
+              <div class="Redes-caja">
+                <a class="btn-small orange darken-4" href="https://www.facebook.com/CodeRamuri/" target="_blank">
+                  <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                 <a class="btn-small orange darken-4" href="https://www.tiktok.com/@coderamuri/" target="_blank">
+                  <i class="fab fa-tiktok"></i> TikTok
+                </a>
+              </div>
+              <div class="Redes-caja">
+                <a class="btn-small orange darken-4" href="https://twitter.com/coderamuri/" target="_blank">
+                  <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a class="btn-small orange darken-4" href="https://www.instagram.com/coderamuri/" target="_blank">
+                  <i class="fab fa-instagram"></i> Instagram
+                </a>
+              </div>            
             </div>
           </div>
         </div>
