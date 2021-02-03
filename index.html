@@ -77,13 +77,24 @@
         font-size:35px;
         font-weight:bold;
       }
-      .Direccion-izquierda{
+      .Direccion-izquierda, .Direccion-derecha{
         display:flex;
       }
       .Direccion-derecha{
-        display:flex;
         flex-direction:row-reverse;
       }
+      @media only screen and (max-width: 992px) {
+         .Direccion-derecha, .Direccion-izquierda{
+          flex-direction:column-reverse;
+        }
+        .Caja-texto, .Caja-imagen{
+          width:100%;
+        }
+        .Caja-imagen img{
+          width:100%;
+        }
+      }
+
       .Portada{
         height:75vh;
         background-image: url("../imagenes/tienda-01.jpg");
@@ -114,6 +125,9 @@
       }
       .brand-logo img{
         margin-right:5px;
+      }
+      html{
+        scroll-behavior:smooth;
       }
     </style>
 </head>
